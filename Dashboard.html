@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="SSS.svg"> 
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <aside>
+                <div class="logo">
+                    <img src="SSS.svg">
+                </div>
+                <div class="sms">
+                    <h1>STUDENT</h1>
+                    <h2>MANAGEMENT</h2>
+                    <h3>SYSTEM</h3>
+                </div>
+                <div class="bar">
+                    <nav>
+                        <ul>
+                            <li class="active"><a href="#"><span
+                                        class="material-symbols-outlined">grid_view</span>Dashboard</a></li>
+                            <li><a href="#"><span
+                                        class="material-symbols-outlined">group</span><span>Students</span></a></li>
+                            <li><a href="#"><span
+                                        class="material-symbols-outlined">check_circle</span><span>Attendance</span></a>
+                            </li>
+                            <li><a href="#"><span class="material-symbols-outlined">class</span><span>Classes</span></a>
+                            </li>
+                            <li><a href="#"><span
+                                        class="material-symbols-outlined">person</span><span>Teachers</span></a></li>
+                            <li><a href="#"><span
+                                        class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="logout">
+                    <li><a href="Login Page.html"><span class="material-symbols-outlined">logout</span>Logout</a></li>
+                </div>
+            </aside>
+        </div>
+        <div class="right">
+            <main>
+                <header class="top-header">
+                    <div class="heading">
+                        <h1>Dashboard</h1>
+                        <p>Welcome back, Amenda!</p>
+                    </div>
+                    <div class="search-icon">
+                        <div class="search box">
+                        <input type="text" placeholder="Search...">
+                        <span class="material-symbols-outlined symbol">search</span>
+                        </div>
+                        <div class="icon">
+                        <span class="material-symbols-outlined ">notifications</span>
+                        <span class="badge">5</span>
+                    </div>
+                </div>
+                    <div class="person">
+                        <div class="person1">
+                        <img src="op.png">
+                        </div>
+                        <div class="p">
+                        <h3>Administrator</h3>
+                        <P>admin@gmail.com</P>
+                        <div class="p1">
+                        <span class="material-symbols-outlined">expand_more</span>
+                        </div>
+                        </div>
+                    </div>
+                    </header>
+                <div class="cards1">
+                    <div class="st">
+                        <div class="img"><span class="material-symbols-outlined img1">group</span></div>
+                        <h3>Total Students</h3>
+                        <h2>1,234</h2>
+                        <h5>+5.2%</h5>
+                        <h6>this month</h6>
+                    </div>
+                    <div class="tc">
+                        <span class="material-symbols-outlined">patient_list</span>
+                        <h3>Total Teachers</h3>
+                        <h2>86</h2>
+                        <h5>+4%</h5>
+                        <h6>this month</h6>
+                    </div>
+                    <div class="ac">
+                        <span class="material-symbols-outlined">check_circle</span>
+                        <h3>Attendance</h3>
+                        <h2>92.6%</h2>
+                        <h5>+2.4%</h5>
+                        <h6>this month</h6>
+                    </div>
+                    <div class="class">
+                        <span class="material-symbols-outlined">menu_book</span>
+                        <h3>Active Classes</h3>
+                        <h2>42</h2>
+                        <h5>+3</h5>
+                        <h6>this month</h6>
+                    </div>
+                </div>
+                <section class="middle-section">
+                    <div class="box1">
+                        <div class="head">
+                            <h2>Attendence Overview</h2>
+                        </div>
+                        <select>
+                            <option>This Week</option>
+                            <option>This Month</option>
+                        </select>
+                        <div class="chart">
+                            <div class="bar">
+                                <div class="monday"></div>
+                                <span>Mon</span>
+                            </div>
+                            <div class="bar">
+                                <div class="monday"></div>
+                                <span>Tue</span>
+                            </div>
+                            <div class="bar">
+                                <div class="monday"></div>
+                                <span>Wed</span>
+                            </div>
+                            <div class="bar">
+                                <div class="monday"></div>
+                                <span>Thu</span>
+                            </div>
+                            <div class="bar">
+                                <div class="monday"></div>
+                                <span>Fri</span>
+                            </div>
+                            <div class="bar">
+                                <div class="monday"></div>
+                                <span>Sat</span>
+                            </div>
+                            <div class="bar">
+                                <div class="monday"></div>
+                                <span>Sun</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upcoming-class">
+                        <div class="section">
+                            <h2>Upcoming Classes</h2>
+                        </div>
+                        <ul class="class-list">
+                            <li class="class-item">
+                                <div class="time"><span>09:00 AM</span></div>
+                                <div class="info">
+                                    <h2>Mathematics</h2>
+                                    <p>Class 10-A . Room 101</p>
+                                </div>
+                            </li>
+                            <li class="class-item">
+                                <div class="time"><span>10:30 AM</span></div>
+                                <div class="info">
+                                    <h2>Science</h2>
+                                    <p>Class 9-B . Room 105</p>
+                                </div>
+                            </li>
+                            <li class="class-item">
+                                <div class="time"><span>12:00 PM</span></div>
+                                <div class="info">
+                                    <h2>English</h2>
+                                    <p>Class 11-C . Room 202</p>
+                                </div>
+                            </li>
+                            <li class="class-item">
+                                <div class="time"><span>01:00 PM</span></div>
+                                <div class="info">
+                                    <h2>Hindi</h2>
+                                    <p>Class 12-B . Room 401</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <div class="recent">
+                    <div class="student">
+                        <h1>Recent Students</h1>
+                        <a href="#">View</a>
+                    </div>
+                    <div class="data">
+                        <table>
+                            <tr>
+                                <th>Student</th>
+                                <th>Roll No.</th>
+                                <th>Class</th>
+                                <th>Attendance</th>
+                                <th>Status</th>
+                            </tr>
+                            <tr>
+                                <td>Ankush Verma</td>
+                                <td>25402</td>
+                                <td>10-A</td>
+                                <td>98%</td>
+                                <td><span>Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Divya sharma</td>
+                                <td>23402</td>
+                                <td>11-C</td>
+                                <td>89%</td>
+                                <td><span>Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sohan Soni</td>
+                                <td>22402</td>
+                                <td>12-B</td>
+                                <td>58%</td>
+                                <td><span>Inactive</span></td>
+                            </tr>
+                            <tr>
+                                <td>Rohan Mehta</td>
+                                <td>22402</td>
+                                <td>9-B</td>
+                                <td>65%</td>
+                                <td><span>Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Sneha Patel</td>
+                                <td>25405</td>
+                                <td>10-A</td>
+                                <td>44%</td>
+                                <td><span>Inactive</span></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

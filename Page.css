@@ -1,0 +1,264 @@
+body{
+    display: flex;
+    height:90vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bg.avif");
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.background{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    width:500px;
+    height:700px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+}
+.h1{
+    display: flex;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+}
+.tittle
+{
+    margin:35px;
+    display: flex;
+    gap:15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.background .tittle .h1 h1,
+.background h3{
+    text-align: center;
+    font-size: 25px;
+    color : #B8B8B8;
+    margin: 0;
+}
+.background .h3 p{
+    text-align: center;
+    font-size: 15px;
+    color: #B8B8B8;
+    margin:0;
+}
+.background .tittle .h1 h2{
+    text-align: center;
+    font-size: 25px;
+    color:#ab7813;
+    margin: 0;
+}
+.background .tittle img{
+    width: 90px;
+    height: 70px;
+}
+.tittle-line{
+    width:120px;
+    height: 2px;
+    background-color: #454444;
+    position: relative;
+    margin-top: 8px;
+}
+.tittle-line span{
+    width: 8px;
+    height: 8px;
+    background-color: #ab7813;
+    border-radius:50px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+}
+.user{
+     position: relative;
+     width:300px;
+     height:9px;
+
+}
+.pass{
+    position: relative;
+    width:300px;
+    margin-top: 15px;
+}
+.pass img{
+    position: absolute;
+    width:22px;
+    height:22px;
+    left: -37px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.background input[type="password"]
+{
+    margin:52px;
+    padding: 11px 12px 12px 55px;
+    width:405px;
+    background-color:rgba(0, 0, 0, 0.55);
+    color: #B8B8B8;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-left: -55px;
+    border: 1px solid #777;
+    outline: none;
+
+}
+.user img{
+    position: absolute;
+    width:50px;
+    height:28px;
+    left:-52px;
+    top:220%;
+    transform: translateY(-50%);
+}
+.background input[type="text"]
+{ 
+    padding: 11px 12px 12px 55px;
+    width:405px;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: #B8B8B8;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-left: -55px;
+    border: 1px solid #777;
+    outline: none;
+}
+.submit {
+    position: relative;
+    top:-20px;
+
+}
+.background .submit input[type="checkbox"]{
+    height:16px;
+    width:16px;
+    margin:0 8px 0 0;
+    cursor: pointer;
+    vertical-align: middle;
+    accent-color: #f7a707;
+    position: relative;
+    left:49px;
+    background-color: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid #777;
+}
+.background .submit label{
+    color: #B8B8B8;
+    vertical-align: middle;
+    font-size: 16px;
+    position: relative;
+    left: 47px;
+}
+.background .submit a{
+    color:#d89205;
+    position: relative;
+    margin-left:115px;
+    left: 92px;
+    top:2px;
+}
+.background .submit button{
+    padding: 10px;
+    width:405px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin:24px;
+    color:black;
+    background-color: #f7a707;
+    border: none;
+    cursor:pointer;
+    font-size: 16px;
+    font-weight:500;
+    position: relative;
+    left:20px;
+    top:2px;
+}
+.background .submit button .arrow{
+    margin-left:15px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.background .or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:12px;
+    margin-top: -32px;
+    width:405px;
+}
+.background .or span{
+    flex:1;
+    height: 1px;
+    background-color: #777;
+}
+.background .or p{
+    margin:12px;
+    color: #B8B8B8;
+    font-weight: 14px;
+}
+.background .submit input[type="checkbox"]:checked {
+    background-color: #f7a707;
+    border-color: #f7a707;
+}
+
+.background .submit input[type="checkbox"]:checked::before {
+    content: "✓";
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    left: 2px;
+    top: -1px;
+}
+.background .create-account{
+    padding: 12px 12px 20px 136px;
+    width:405px;
+    background-color:rgba(0, 0, 0, 0.55);
+    color:#f7a707;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-left: -5px;
+    border: 2px solid #f7a707;
+    text-decoration: none;
+    font-size: 18px;
+}
+.background .create-account img{
+  position: absolute;
+  width: 328px;
+  height: 20px;
+  left: 2px;
+  top: 81%;
+  transform: translateY(-50%);
+}
+.background .trust
+{
+    color: #B8B8B8;
+    display: flex;
+    margin-top: 20px;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background .trust span:not(:last-child) {
+    border-right: 1px solid #777;
+    padding-right: 20px;
+}
+.background .secure img{
+  position: absolute;
+  width: 207px;
+  height: 15px;
+  left: 2px;
+  top: 623px;
+  transform: translateY(-50%);
+}
+.lastline p{
+    color: #B8B8B8;
+    margin-top: 25px;
+}
