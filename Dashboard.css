@@ -826,13 +826,14 @@ body {
     border: 2px solid #dddddd;
     background-color: white;
     width: 1095px;
-    height: 380px;
+    height: 370px;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr auto;
     grid-template-rows: auto 1fr;
     position: relative;
     left:51px;
+    overflow: hidden;
     bottom:485px;
     border-radius: 12px;  
 }
@@ -860,21 +861,44 @@ body {
     top:22px;
     right: 34px;
 }
-.container .right main .recent .data{
-    width:100%;
+.container .right main .recent .data table{
+    width:calc(100% - 48px);
     border-collapse: collapse;
     position: absolute;
     left:24px;
     top:60px;
 }
+.container .right main .recent .data{
+    width: auto;
+    margin: 0 20px;
+}
 .container .right main .recent .data th,td{
-    padding: 12px 0px;
+    padding: 14px 0px;
     text-align: left;
     border-bottom: 1px solid #dddddd;
 }
 .container .right main .recent .data tbody tr:last-child td{
     border-bottom: none;
 }
-.container .right main .recent .data table tr,th{
+.container .right main .recent .data table th:nth-child(1){
     font-size: 13px;
+}
+.container .right main .recent .data .img1 img{
+    width:12px;
+} 
+.container .right main .recent .data .img2 img{
+    width: 12px;
+}
+.container .right main .recent .data .img3 img{
+    width:12px;
+}
+.container .right main .recent .data .img4 img{
+    width:12px;
+}
+.container .right main .recent .data .img5 img{
+    width:12px;
+}
+.container .right main .recent .data table tr{
+    position: relative;
+    top:6px;
 }
