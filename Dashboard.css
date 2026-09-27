@@ -826,7 +826,7 @@ body {
     border: 2px solid #dddddd;
     background-color: white;
     width: 1095px;
-    height: 370px;
+    height: 430px;
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr auto;
@@ -880,23 +880,81 @@ body {
 .container .right main .recent .data tbody tr:last-child td{
     border-bottom: none;
 }
-.container .right main .recent .data table th:nth-child(1){
+.container .right main .recent .data table th:nth-child(1),
+.container .right main .recent .data table th:nth-child(2),
+.container .right main .recent .data table th:nth-child(3),
+.container .right main .recent .data table th:nth-child(4)
+{
+    font-size: 13px;
+}
+.container .right main .recent .data table th:nth-child(5){
+    font-size: 13px;
+    position: relative;
+    left:15px;
+}
+.container .right main .recent .data table td:nth-child(1) span{
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  bottom: 9px;
+  left: 20px;
+}
+.container .right main .recent .data table td:nth-child(2){
+    font-size: 13px;
+    color: #777;
+}
+.container .right main .recent .data table td:nth-child(3){
+    font-size: 13px;
+    color: #777;
+}
+.container .right main .recent .data table  td:nth-child(4){
+    font-size: 13px;
+    font-weight: 600;
+    color: #f7a707;
+    position: relative;
+    left:22px;
+}
+.container .right main .recent .data table .active{
+    color: green;
+    background-color: #e8f5e9;
+    box-sizing: border-box;
+    padding:5px 14px;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    border-radius: 5px;
+}
+.container .right main .recent .data table .inactive{
+    color:red;
+    background-color: #fdecec;
+    box-sizing: border-box;
+    padding:5px 14px;
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    position: relative;
+    right:5px;
+    border-radius: 5px;
+}
+.container .right main .recent .data table tr:nth-child(1) {
     font-size: 13px;
 }
 .container .right main .recent .data .img1 img{
-    width:12px;
+    width:30px;
 } 
 .container .right main .recent .data .img2 img{
-    width: 12px;
+    width: 30px;
 }
 .container .right main .recent .data .img3 img{
-    width:12px;
+    width:30px;
 }
 .container .right main .recent .data .img4 img{
-    width:12px;
+    width:30px;
 }
 .container .right main .recent .data .img5 img{
-    width:12px;
+    width:30px;
 }
 .container .right main .recent .data table tr{
     position: relative;
