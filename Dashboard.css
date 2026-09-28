@@ -2,25 +2,42 @@ body {
     display: flex;
     min-height: 100vh;
     margin: 0;
+    height: 0%;
     padding: 0;
     font-family: 'Inter', sans-serif;
+      background: linear-gradient(
+        to right,
+        #000000 0%,
+        #000000 17%,
+        #F7F6F2 17%,
+        #F7F6F2 100%
+    );
 }
 
 .container {
     display: flex;
     min-height: 100vh;
+    height: 130vh;
     width: 100%;
 }
 
 .container .left {
     width: 17%;
     min-height: 100vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 0, 0);
     justify-content: flex-start;
 }
-
+.container .right {
+    background-color: #F7F6F2;
+    min-width: 0;
+    min-height: 100vh;
+    height: auto;
+    box-sizing: border-box;
+    flex: 1;
+}
 .container .left aside {
     min-height: 100vh;
     display: flex;
@@ -91,11 +108,15 @@ body {
 }
 
 .container .left .logout {
-    margin: auto 20px 20px;
-    padding-top: 15px;
-    border-top: 1px solid #3d3d3d;
+    margin:12px 20px 20px;
+    padding-top: 0;   
 }
-
+.container .left .line{
+    border: 1px solid #777777;
+    margin:auto 10px 0;
+    border-radius: 50%;
+    margin-top: 280px;
+}
 .container .left .logout li {
     list-style: none;
     width: 100%;
@@ -127,14 +148,6 @@ body {
 .container .left .bar nav ul li a span.material-symbols-outlined {
     font-size: 24px;
     flex-direction: column;
-}
-
-.container .right {
-    background-color: #F7F6F2;
-    min-width: 0;
-    min-height: 100vh;
-    box-sizing: border-box;
-    flex: 1;
 }
 
 .container .right main .top-header .heading {
@@ -474,7 +487,7 @@ body {
     position: relative;
     position: absolute;
     top: 111px;
-    right: 133px;
+    right: 134px;
     left: auto;
     bottom: auto;
     border-radius: 12px;
@@ -959,4 +972,43 @@ body {
 .container .right main .recent .data table tr{
     position: relative;
     top:6px;
+}
+body,
+.container,
+.container .left {
+    min-height: 100vh;
+}
+
+.container .left {
+    height: auto;
+}
+
+.container .right {
+    min-height: 100vh;
+    height: auto;
+}
+
+.container .right main .middle-section {
+    display: grid;
+    grid-template-columns: 530px 530px;
+    column-gap: 34px;
+    margin: -246px 0 0 51px;
+}
+
+.container .right main .middle-section .box1 {
+    left: 0;
+    bottom: 0;
+    margin: 0;
+}
+
+.container .right main .middle-section .upcoming-class {
+    top: 0;
+    transform: none;
+    margin: 0;
+}
+
+.container .right main .recent {
+    bottom: 0;
+    margin-top: 23px;
+    margin-bottom: 30px;
 }
