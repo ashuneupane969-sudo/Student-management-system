@@ -44,7 +44,6 @@ body {
     flex-direction: column;
     box-sizing: border-box;
 }
-
 .container .left .logo img {
     width: 40%;
     height: 100%;

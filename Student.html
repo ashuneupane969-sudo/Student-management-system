@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Students</title>
-    <link rel="icon" type="image/png" href="SSS.svg"> 
+    <link rel="icon" type="image/png" href="SSS.svg">
+    <link rel="stylesheet" href="Student.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="SSS.svg">
 </head>
 <body>
-       <div class="container">
+    <div class="container">
         <div class="left">
             <aside>
                 <div class="logo">
@@ -18,32 +25,7 @@
                     <h2>MANAGEMENT</h2>
                     <h3>SYSTEM</h3>
                 </div>
-                   <div class="bar">
-                    <nav>
-                        <ul>
-                            <li class="active"><a href="Dashboard.html"><span
-                                        class="material-symbols-outlined">grid_view</span>Dashboard</a></li>
-                            <li><a href="Student.html"><span
-                                        class="material-symbols-outlined">group</span><span>Students</span></a></li>
-                            <li><a href="#"><span
-                                        class="material-symbols-outlined">check_circle</span><span>Attendance</span></a>
-                            </li>
-                            <li><a href="#"><span class="material-symbols-outlined">class</span><span>Classes</span></a>
-                            </li>
-                            <li><a href="#"><span
-                                        class="material-symbols-outlined">person</span><span>Teachers</span></a></li>
-                            <li><a href="#"><span
-                                        class="material-symbols-outlined">settings</span><span>Settings</span></a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div class="line"></div>
-                <div class="logout">
-                    <li><a href="Login Page.html"><span class="material-symbols-outlined">logout</span>Logout</a></li>
-                </div>
-            </aside>
-        </div>
-           <div class="bar">
+                <div class="bar">
                     <nav>
                         <ul>
                             <li class="active"><a href="Dashboard.html"><span
@@ -72,31 +54,33 @@
             <main>
                 <header class="top-header">
                     <div class="heading">
-                        <h1>Dashboard</h1>
-                        <p>Welcome back, Amenda!</p>
+                        <h1>Students</h1>
+                        <p>Manage and view all student records</p>
                     </div>
                     <div class="search-icon">
                         <div class="search box">
-                        <input type="text" placeholder="Search...">
-                        <span class="material-symbols-outlined symbol">search</span>
+                            <input type="text" placeholder="Search...">
+                            <span class="material-symbols-outlined symbol">search</span>
                         </div>
                         <div class="icon">
-                        <span class="material-symbols-outlined ">notifications</span>
-                        <span class="badge">5</span>
+                            <span class="material-symbols-outlined ">notifications</span>
+                            <span class="badge">5</span>
+                        </div>
                     </div>
-                </div>
                     <div class="person">
                         <div class="person1">
-                        <img src="op.png">
+                            <img src="op.png">
                         </div>
                         <div class="p">
-                        <h3>Administrator</h3>
-                        <P>admin@gmail.com</P>
-                        <div class="p1">
-                        <span class="material-symbols-outlined">expand_more</span>
+                            <h3>Administrator</h3>
+                            <P>admin@gmail.com</P>
+                            <div class="p1">
+                                <span class="material-symbols-outlined">expand_more</span>
+                            </div>
                         </div>
-                        </div>
-                        <div class="cards1">
+                    </div>
+                </header>
+                <div class="cards1">
                     <div class="st">
                         <div class="img"><span class="material-symbols-outlined img1">group</span></div>
                         <h3>Total Students</h3>
@@ -112,18 +96,34 @@
                         <h6>this month</h6>
                     </div>
                     <div class="ac">
-                       <div class="img"><span class="material-symbols-outlined img1">check_circle</span></div>
+                        <div class="img"><span class="material-symbols-outlined img1">check_circle</span></div>
                         <h3>Inactive Students</h3>
                         <h2>52</h2>
                         <h5>+7%</h5>
                         <h6>this month</h6>
                     </div>
-                    </div>
-             </header>
-             <div class="recent">
+                </div>
+                <div class="recent">
                     <div class="student">
                         <h1>All Students</h1>
-                        <a href="#">View all</a>
+                        <div class="class">
+                            <select>
+                                <option>All Classes</option>
+                                <option>10-A</option>
+                                <option>9-B</option>
+                                <option>11-C</option>
+                                <option>12-B</option>
+                                <option>8-A</option>
+                            </select>
+                        </div>
+                        <div class="status">
+                            <select>
+                                <option>All Status</option>
+                                <option>Active</option>
+                                <option>Inactive</option>
+                            </select>
+                        </div>
+                        <button class="add"><span class="material-symbols-outlined">add</span>Add Student</button>
                     </div>
                     <div class="data">
                         <table>
@@ -136,56 +136,73 @@
                                 <th>Actions</th>
                             </tr>
                             <tr>
-                                <td><div class="img2"><img src="man1.png"><span>Ankush verma</span></div></td>
+                                <td>
+                                    <div class="img2"><img src="man1.png"><span>Ankush verma</span></div>
+                                </td>
                                 <td>25402</td>
                                 <td>10-A</td>
                                 <td>98%</td>
                                 <td><span class="active">Active</span></td>
                             </tr>
                             <tr>
-                                <td><div class="img3"><img src="man2.png"><span>Divya verma</span></div></td>
+                                <td>
+                                    <div class="img3"><img src="man2.png"><span>Divya verma</span></div>
+                                </td>
                                 <td>23402</td>
                                 <td>11-C</td>
                                 <td>89%</td>
                                 <td><span class="active">Active</span></td>
                             </tr>
                             <tr>
-                                <td><div class="img4"><img src="man 3.png"><span>Sohan soni</span></div></td>
+                                <td>
+                                    <div class="img4"><img src="man 3.png"><span>Sohan soni</span></div>
+                                </td>
                                 <td>22402</td>
                                 <td>12-B</td>
                                 <td>58%</td>
                                 <td><span class="inactive">Inactive</span></td>
                             </tr>
                             <tr>
-                                <td><div class="img5"><img src="man4.png"><span>Sohani arora</span></div></td>
+                                <td>
+                                    <div class="img5"><img src="man4.png"><span>Sohani arora</span></div>
+                                </td>
                                 <td>22402</td>
                                 <td>9-B</td>
                                 <td>65%</td>
                                 <td><span class="active">Active</span></td>
                             </tr>
                             <tr>
-                                <td><div class="img1"><img src="man.png"><span>Sneha Patel</span></div></td>
+                                <td>
+                                    <div class="img1"><img src="man.png"><span>Sneha Patel</span></div>
+                                </td>
                                 <td>25405</td>
                                 <td>10-A</td>
                                 <td>44%</td>
                                 <td><span class="inactive">Inactive</span></td>
                             </tr>
                             <tr>
-                                <td><div class="img1"><img src="man.png"><span>Sneha Patel</span></div></td>
+                                <td>
+                                    <div class="img1"><img src="man.png"><span>Sneha Patel</span></div>
+                                </td>
                                 <td>24304</td>
                                 <td>11-C</td>
                                 <td>69%</td>
                                 <td><span class="inactive">Active</span></td>
                             </tr>
                             <tr>
-                                <td><div class="img1"><img src="man.png"><span>Sneha Patel</span></div></td>
+                                <td>
+                                    <div class="img1"><img src="man.png"><span>Sneha Patel</span></div>
+                                </td>
                                 <td>27405</td>
                                 <td>9-B</td>
                                 <td>39%</td>
                                 <td><span class="inactive">Inactive</span></td>
                             </tr>
                         </table>
-                    </div>  
-                </body>
+                    </div>
+                </div>
             </main>
-        </html>
+        </div>
+    </div>
+</body>
+</html>
