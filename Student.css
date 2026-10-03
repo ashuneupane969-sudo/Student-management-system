@@ -29,13 +29,11 @@ body {
 .container {
     display: flex;
     min-height: 100vh;
-    height: 130vh;
     width: 100%;
 }
 .container .left {
     width: 17%;
     min-height: 100vh;
-    height: 130vh;
     display: flex;
     flex-direction: column;
     background-color: rgb(0, 0, 0);
@@ -52,6 +50,7 @@ body {
 .container .left aside {
     min-height: 100vh;
     display: flex;
+    flex:1;
     flex-direction: column;
     box-sizing: border-box;
 }
@@ -125,7 +124,7 @@ body {
     border: 1px solid #777777;
     margin:auto 10px 0;
     border-radius: 50%;
-    margin-top: 280px;
+    margin:auto 10px 0;
 }
 .container .left .logout li {
     list-style: none;
@@ -309,7 +308,7 @@ body {
     box-sizing: border-box;
     border: 2px solid #dddddd;
     background-color: #ffffff;
-    width: 250px;
+    width: 370px;
     display: flex;
     min-height: 135px;
     position: relative;
@@ -347,14 +346,14 @@ body {
 .container .right main .cards1 .st h2 {
     position: relative;
     top: 35px;
-    right: 57px;
+    right: 56px;
 }
 
 .container .right main .cards1 .st h5 {
     color: #f7a707;
     top: 70px;
     position: relative;
-    right: 124px;
+    right: 125px;
 }
 
 .container .right main .cards1 .st h6 {
@@ -366,20 +365,20 @@ body {
     font-weight: 300;
 }
 
-.container .right main .cards1 .tc {
+.container .right main .cards1 .as {
     box-sizing: border-box;
     border: 2px solid #dddddd;
     background-color: #ffffff;
-    width: 250px;
+    width: 370px;
     display: flex;
     min-height: 135px;
     position: relative;
-    left: 330px;
+    left: 462px;
     bottom: 125px;
     border-radius: 12px;
 }
 
-.container .right main .cards1 .tc .img .img1 {
+.container .right main .cards1 .as .img .img1 {
     color: #f7a707;
     left: 15px;
     top: 22px;
@@ -394,7 +393,7 @@ body {
     background-color: #FEF7E1;
 }
 
-.container .right main .cards1 .tc h3 {
+.container .right main .cards1 .as h3 {
     color: #777777;
     font-weight: 300;
     font-size: 13px;
@@ -404,42 +403,42 @@ body {
     top: 17px;
 }
 
-.container .right main .cards1 .tc h2 {
+.container .right main .cards1 .as h2 {
     position: relative;
-    right: 60px;
+    right: 69px;
     top: 34px;
 }
 
-.container .right main .cards1 .tc h5 {
+.container .right main .cards1 .as h5 {
     color: #f7a707;
     top: 70px;
     position: relative;
-    right: 95px;
+    right: 128px;
 }
 
-.container .right main .cards1 .tc h6 {
+.container .right main .cards1 .as h6 {
     color: #777777;
     position: relative;
     top: 70px;
-    right: 90px;
+    right: 124px;
     white-space: nowrap;
     font-weight: 300;
 }
 
-.container .right main .cards1 .ac {
+.container .right main .cards1 .is {
     box-sizing: border-box;
     border: 2px solid #dddddd;
     background-color: #ffffff;
-    width: 250px;
+    width: 370px;
     display: flex;
     min-height: 135px;
     position: relative;
-    left: 615px;
+    left: 875px;
     bottom: 260px;
     border-radius: 12px;
 }
 
-.container .right main .cards1 .ac .img .img1 {
+.container .right main .cards1 .is .img .img1 {
     color: #f7a707;
     left: 14px;
     top: 19px;
@@ -455,7 +454,7 @@ body {
     z-index: 2;
 }
 
-.container .right main .cards1 .ac h3 {
+.container .right main .cards1 .is h3 {
     color: #777777;
     font-size: 13px;
     font-weight: 300;
@@ -464,24 +463,59 @@ body {
     top: 15px;
 }
 
-.container .right main .cards1 .ac h2 {
+.container .right main .cards1 .is h2 {
     top: 32px;
-    right: 45px;
+    right: 79px;
     position: relative;
 }
 
-.container .right main .cards1 .ac h5 {
+.container .right main .cards1 .is h5 {
     color: #f7a707;
     position: relative;
-    right: 126px;
+    right: 112px;
     top: 69px;
 }
 
-.container .right main .cards1 .ac h6 {
+.container .right main .cards1 .is h6 {
     font-weight: 300;
     color: #777777;
     white-space: nowrap;
-    right: 121px;
+    right: 106px;
     position: relative;
     top: 69px;
+}
+.container .right main .recent{
+    box-sizing: border-box;
+    border: 2px solid #dddddd;
+    background-color: white;
+    width: 1197px;
+    height: 700px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto 1fr;
+    position: relative;
+    left:51px;
+    overflow: hidden;
+    margin-top:-235px;
+    margin-bottom: 20px;
+    border-radius: 12px;  
+}
+.container .right main .recent .student h1{
+    font-size: 18px;
+    font-weight: 600;
+    position: relative;
+    bottom:12px;
+    right:4px;
+}
+.container .right main .recent .data table td img {
+    height: 35px;
+    width: 35px;   
+    object-fit: cover;
+    border-radius: 50%;
+}
+.container .right main .recent .data table td > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
