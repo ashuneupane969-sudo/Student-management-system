@@ -364,7 +364,7 @@ body {
     display: flex;
     min-height: 135px;
     position: relative;
-    left: 330px;
+    left: 356px;
     bottom: 125px;
     border-radius: 12px;
 }
@@ -424,7 +424,7 @@ body {
     display: flex;
     min-height: 135px;
     position: relative;
-    left: 615px;
+    left: 657px;
     bottom: 260px;
     border-radius: 12px;
 }
@@ -486,7 +486,7 @@ body {
     position: relative;
     position: absolute;
     top: 111px;
-    right: 134px;
+    right: 65px;
     left: auto;
     bottom: auto;
     border-radius: 12px;
@@ -755,6 +755,7 @@ body {
     flex-direction: column;
     position: relative;
     top:119px;
+    left:53px;
 }
 .container .right main .middle-section .upcoming-class ul li{
     list-style: none;
@@ -837,7 +838,7 @@ body {
     box-sizing: border-box;
     border: 2px solid #dddddd;
     background-color: white;
-    width: 1095px;
+    width: 1149px;
     height: 430px;
     padding: 20px;
     display: grid;
