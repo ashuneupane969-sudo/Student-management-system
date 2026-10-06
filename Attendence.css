@@ -159,7 +159,6 @@ body {
     color: black;
     background-color: #f7a707;
 }
-
 .container .left .bar nav ul li a span.material-symbols-outlined {
     font-size: 24px;
     flex-direction: column;
@@ -301,7 +300,6 @@ body {
     bottom: 89px;
     color: #777777;
 }
-
 .container.right main .cards1 {
     display: flex;
     box-sizing: border-box;
@@ -354,21 +352,21 @@ body {
 .container .right main .cards1 .st h2 {
     position: relative;
     top: 35px;
-    right: 56px;
+    right: 84px;
 }
 
 .container .right main .cards1 .st h5 {
     color: #f7a707;
     top: 70px;
     position: relative;
-    right: 125px;
+    right: 166px;
 }
 
 .container .right main .cards1 .st h6 {
     color: #777777;
     position: relative;
     top: 70px;
-    right: 120px;
+    right: 160px;
     white-space: nowrap;
     font-weight: 300;
 }
@@ -413,7 +411,7 @@ body {
 
 .container .right main .cards1 .as h2 {
     position: relative;
-    right: 69px;
+    right: 62px;
     top: 34px;
 }
 
@@ -421,14 +419,14 @@ body {
     color: #f7a707;
     top: 70px;
     position: relative;
-    right: 128px;
+    right: 116px;
 }
 
 .container .right main .cards1 .as h6 {
     color: #777777;
     position: relative;
     top: 70px;
-    right: 124px;
+    right: 110px;
     white-space: nowrap;
     font-weight: 300;
 }
@@ -449,7 +447,7 @@ body {
 .container .right main .cards1 .is .img .img1 {
     color: #f7a707;
     left: 14px;
-    top: 19px;
+    top: 22px;
     width: 90px;
     height: 80px;
     text-align: center;
@@ -473,14 +471,14 @@ body {
 
 .container .right main .cards1 .is h2 {
     top: 32px;
-    right: 79px;
+    right: 59px;
     position: relative;
 }
 
 .container .right main .cards1 .is h5 {
     color: #f7a707;
     position: relative;
-    right: 112px;
+    right: 88px;
     top: 69px;
 }
 
@@ -488,11 +486,10 @@ body {
     font-weight: 300;
     color: #777777;
     white-space: nowrap;
-    right: 106px;
+    right: 82px;
     position: relative;
     top: 69px;
 }
-
 .container .right main .recent {
     box-sizing: border-box;
     border: 2px solid #dddddd;
@@ -532,7 +529,7 @@ body {
     gap: 10px;
 }
 
-.container .right main .recent .student .searches input {
+.container .right main .recent .student .date input {
     width: 220px;
     height: 39px;
     box-sizing: border-box;
@@ -545,17 +542,6 @@ body {
     margin-left: 400px;
     bottom: 60px;
     left: auto
-}
-
-.container .right main .recent .student .searches .symbol {
-    position: absolute;
-    left: 438px;
-    top: 24px;
-    transform: translateY(6px);
-    z-index: 2;
-    color: #777777;
-    pointer-events: none;
-    font-size: 22px;
 }
 
 .container .right main .recent .student .class select {
@@ -593,117 +579,31 @@ body {
   background: #f7a707;
   color: white;
   height: 36px;
-  width: 140px;
+  width: 152px;
   justify-content: center;
   align-content: center;
   align-items: center;
   display: flex;
   position: relative;
-  bottom: 99px;
-  left: 1015px;
+  bottom: 98px;
+  left: 1010px;
   border:1px solid #c8c4c4;
   cursor: pointer;
   border-radius: 8px;
 }
 .container .right main .recent .student  .add .img1{
   position: relative;
-  right: 11px;
+  right: 4px;
   bottom: 0px;
 }
 .container .right main .recent .data table {
     position: absolute;
     right: -20px;
-    bottom: 130px; 
+    bottom: 225px; 
     width: 100%;
     height: 400px;  
     margin: 246px 0 0 51px;
     border-collapse: collapse;
     border-spacing: 0;
     display: table;
-}
-.container .right main .recent .data table th,
-.container .right main .recent .data table td {
-    padding: 14px 10px;
-    text-align: left;
-    border-bottom: none;
-    gap: 10px;
-
-}
-.container .right main .recent .data table th:nth-child(5) {
-    text-align: left;
-    position: relative;
-    padding: 14px 10px 14px 0;
-}
-.container .right main .recent .data table td:nth-child(5) {
-    color:#f7a707;
-    font-weight: 600;
-}
-.container .right main .recent .data table td:nth-child(2) { 
-    color:#777777;
-}
-.container .right main .recent .data table td:nth-child(3) { 
-    color:#777777;
-}
-.container .right main .recent .data table td:nth-child(4) { 
-    color:#777777;
-}
-.container .right main .recent .data table td:nth-child(1) { 
-    font-weight: 600;
-}
-.container .right main .recent .data table td:nth-child(5) { 
-    display: flex;
-    gap: 10px;
-}
-.container .right main .recent .data table tr{
-    border-bottom: 1px solid #dddddd;
-}
-.container .right main .recent .data table td .active { 
-    color:green;
-    background-color: #e8f5e9;
-    box-sizing: border-box;
-    padding:5px 14px;
-    width: auto;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    display: inline-flex;
-    border-radius: 5px;
-    right: 11px;
-    position: relative;
-
-}
-.container .right main .recent .data table td .inactive { 
-    color:red;
-    background-color: #fdecec;
-    box-sizing: border-box;
-    padding:5px 14px;
-    width: auto;
-    height: auto;
-    display: inline-flex;
-    position: relative;
-    right:16px;
-    border-radius: 5px;
-}
-.container .right main .recent .data table td span.img1 {
-    font-size: 20px;
-    cursor: pointer;
-    padding-right: 30px;
-}
-.container .right main .recent .data table td span.img2 {
-    font-size: 20px;
-    cursor: pointer;
-    padding-right: 30px;
-    color: #f7a707;
-}
-.container .right main .recent .data table td span.img3 {
-    font-size: 20px;
-    cursor: pointer;
-    color: red;
-}
-.container .right main .recent .data p{
-    position: absolute;
-    bottom: 45px;
-    left: 20px;
-    font-size: 14px;
-    color: #777777;
 }

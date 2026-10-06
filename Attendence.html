@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students</title>
+    <title>Attendance</title>
     <link rel="icon" type="image/png" href="SSS.svg">
-    <link rel="stylesheet" href="Student.css">
+    <link rel="stylesheet" href="Attendence.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,8 +54,8 @@
             <main>
                 <header class="top-header">
                     <div class="heading">
-                        <h1>Students</h1>
-                        <p>Manage and view all student records</p>
+                    <h1>Attendance</h1>
+                        <p>Track and Manage all student attendance records</p>
                     </div>
                     <div class="search-icon">
                         <div class="search box">
@@ -82,33 +82,32 @@
                 </header>
                 <div class="cards1">
                     <div class="st">
-                        <div class="img"><span class="material-symbols-outlined img1">group</span></div>
-                        <h3>Total Students</h3>
-                        <h2>1,234</h2>
-                        <h5>+5.2%</h5>
+                        <div class="img"><span class="material-symbols-outlined img1">assignment_turned_in</span></div>
+                        <h3>Overall Attendance</h3>
+                        <h2>92.6%</h2>
+                        <h5>+2.2%</h5>
                         <h6>this month</h6>
                     </div>
                     <div class="as">
                         <div class="img"><span class="material-symbols-outlined img1">person_check</span></div>
-                        <h3>Active Students</h3>
+                        <h3>Present Today</h3>
                         <h2>1254</h2>
-                        <h5>+28%</h5>
+                        <h5>92.8%</h5>
                         <h6>this month</h6>
                     </div>
                     <div class="is">
                         <div class="img"><span class="material-symbols-outlined img1">person_cancel</span></div>
-                        <h3>Inactive Students</h3>
-                        <h2>52</h2>
-                        <h5>+7%</h5>
+                        <h3>Absent Today</h3>
+                        <h2>90</h2>
+                        <h5>7.4%</h5>
                         <h6>this month</h6>
                     </div>
                 </div>
                 <div class="recent">
                     <div class="student">
                         <h1>All Students</h1>
-                        <div class="searches">
-                            <input type="text" placeholder="Search Students...">
-                            <span class="material-symbols-outlined symbol">search</span>
+                        <div class="date">
+                            <input type="date" value="2026-10-06">
                         </div>
                         <div class="class">
                             <select>
@@ -127,7 +126,7 @@
                                 <option>Inactive</option>
                             </select>
                         </div>
-                        <button class="add"><span class="material-symbols-outlined img1">add</span>Add Student</button>
+                        <button class="add"><span class="material-symbols-outlined img1">add</span>Mark Attendence</button>
                     </div>
                     <div class="data">
                         <table>
@@ -135,9 +134,9 @@
                                 <th>Student</th>
                                 <th>Roll No.</th>
                                 <th>Class</th>
-                                <th>Gender</th>
-                                <th>Attendance</th>
+                                <th>Date</th>
                                 <th>Status</th>
+                                <th>Check In</th>
                                 <th>Actions</th>
                             </tr>
                             <tr>
@@ -146,28 +145,24 @@
                                 </td>
                                 <td>25402</td>
                                 <td>10-A</td>
-                                <td>Male</td>
                                 <td>98%</td>
                                 <td><span class="active">Active</span></td>
                                 <td>
                                     <span class="material-symbols-outlined img1">visibility</span>
                                     <span class="material-symbols-outlined edit-icon img2">edit_square</span>
-                                    <span class="material-symbols-outlined img3">delete</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="img3"><img src="women.png"><span>Divya verma</span></div>
+                                    <div class="img3"><img src="man2.png"><span>Dinesh Verma</span></div>
                                 </td>
                                 <td>23402</td>
                                 <td>11-C</td>
-                                <td>Female</td>
                                 <td>89%</td>
                                 <td><span class="active">Active</span></td>
                                 <td>
                                     <span class="material-symbols-outlined img1">visibility</span>
                                     <span class="material-symbols-outlined edit-icon img2">edit_square</span>
-                                    <span class="material-symbols-outlined img3">delete</span>
                                 </td>
                             </tr>
                             <tr>
@@ -176,77 +171,66 @@
                                 </td>
                                 <td>22402</td>
                                 <td>12-B</td>
-                                <td>Male</td>
                                 <td>58%</td>
                                 <td><span class="inactive">Inactive</span></td>
                                  <td>
                                     <span class="material-symbols-outlined img1">visibility</span>
                                     <span class="material-symbols-outlined edit-icon img2">edit_square</span>
-                                    <span class="material-symbols-outlined img3">delete</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="img5"><img src="women1.png"><span>Sohani arora</span></div>
+                                    <div class="img5"><img src="women3.png"><span>Sohani arora</span></div>
                                 </td>
                                 <td>22402</td>
                                 <td>9-B</td>
-                                <td>Female</td>
                                 <td>65%</td>
                                 <td><span class="active">Active</span></td>
                                 <td>
                                     <span class="material-symbols-outlined img1">visibility</span>
                                     <span class="material-symbols-outlined edit-icon img2">edit_square</span>
-                                    <span class="material-symbols-outlined img3">delete</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="img6"><img src="women3.png"><span>Sneha Patel</span></div>
+                                    <div class="img6"><img src="women.png"><span>Sneha Patel</span></div>
                                 </td>
                                 <td>25405</td>
                                 <td>10-A</td>
-                                <td>Female</td>
                                 <td>44%</td>
                                 <td><span class="inactive">Inactive</span></td>
                                 <td>
                                     <span class="material-symbols-outlined img1">visibility</span>
                                     <span class="material-symbols-outlined edit-icon img2">edit_square</span>
-                                    <span class="material-symbols-outlined img3">delete</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="img7"><img src="op.png"><span>Naman Kumar</span></div>
+                                    <div class="img7"><img src="women1.png"><span>Sonali Kumar</span></div>
                                 </td>
                                 <td>24304</td>
                                 <td>11-C</td>
-                                <td>Male</td>
                                 <td>69%</td>
                                 <td><span class="active">Active</span></td>
                                 <td>
                                     <span class="material-symbols-outlined img1">visibility</span>
                                     <span class="material-symbols-outlined edit-icon img2">edit_square</span>
-                                    <span class="material-symbols-outlined img3">delete</span>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <div class="img8"><img src="man4.png"><span>Akash Jangid</span></div>
+                                    <div class="img8"><img src="women1.png"><span>Sneha Patel</span></div>
                                 </td>
                                 <td>27405</td>
                                 <td>9-B</td>
-                                <td>Male</td>
                                 <td>39%</td>
                                 <td><span class="inactive">Inactive</span></td>
                                 <td>
                                     <span class="material-symbols-outlined img1">visibility</span>
                                     <span class="material-symbols-outlined edit-icon img2">edit_square</span>
-                                    <span class="material-symbols-outlined img3">delete</span>
                                 </td>
                             </tr>
                         </table>
-                        <p>Showing 1 to 3 of 1234 Students</p>
                     </div>
                 </div>
             </main>
