@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Attendance</title>
+    <title>Classes</title>
     <link rel="icon" type="image/png" href="SSS.svg">
-    <link rel="stylesheet" href="Attendence.css">
+    <link rel="stylesheet" href="Classes.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,8 +54,8 @@
             <main>
                 <header class="top-header">
                     <div class="heading">
-                    <h1>Attendance</h1>
-                        <p>Track and Manage all student attendance records</p>
+                    <h1>Classes</h1>
+                        <p>Manage all class information</p>
                     </div>
                     <div class="search-icon">
                         <div class="search box">
@@ -82,32 +82,33 @@
                 </header>
                 <div class="cards1">
                     <div class="st">
-                        <div class="img"><span class="material-symbols-outlined img1">assignment_turned_in</span></div>
-                        <h3>Overall Attendance</h3>
-                        <h2>92.6%</h2>
-                        <h5>+2.2%</h5>
+                        <div class="img"><span class="material-symbols-outlined img1">menu_book</span></div>
+                        <h3>Total Classes</h3>
+                        <h2>42</h2>
+                        <h5>+5%</h5>
                         <h6>this month</h6>
                     </div>
                     <div class="as">
-                        <div class="img"><span class="material-symbols-outlined img1">person_check</span></div>
-                        <h3>Present Today</h3>
-                        <h2>1254</h2>
-                        <h5>92.8%</h5>
-                        <h6>this month</h6>
+                        <div class="img"><span class="material-symbols-outlined img1">group</span></div>
+                        <h3>Active Classes</h3>
+                        <h2>40</h2>
+                        <h5>90.8%</h5>
+                        <h6>of total classes</h6>
                     </div>
                     <div class="is">
-                        <div class="img"><span class="material-symbols-outlined img1">person_cancel</span></div>
-                        <h3>Absent Today</h3>
-                        <h2>90</h2>
-                        <h5>7.4%</h5>
+                        <div class="img"><span class="material-symbols-outlined img1">person</span></div>
+                        <h3>Total Students</h3>
+                        <h2>1254</h2>
+                        <h5>+8.4%</h5>
                         <h6>this month</h6>
                     </div>
                 </div>
                 <div class="recent">
                     <div class="student">
-                        <h1>Attendence Records</h1>
-                        <div class="date">
-                            <input type="date" value="2026-10-06">
+                        <h1>Class Records</h1>
+                        <div class="searches">
+                            <input type="text" placeholder="Search...">
+                            <span class="material-symbols-outlined symbol">search</span>
                         </div>
                         <div class="class">
                             <select>
@@ -126,112 +127,98 @@
                                 <option>Inactive</option>
                             </select>
                         </div>
-                        <button class="add"><span class="material-symbols-outlined img1">add</span>Mark Attendence</button>
+                        <button class="add"><span class="material-symbols-outlined img1">add</span>Add Class</button>
                     </div>
                     <div class="data">
                         <table>
                             <tr>
-                                <th>Student</th>
-                                <th>Roll No.</th>
                                 <th>Class</th>
-                                <th>Date</th>
+                                <th>Section</th>
+                                <th>Class Teacher</th>
+                                <th>Students</th>
+                                <th>Schedule</th>
                                 <th>Status</th>
-                                <th>Check In</th>
                                 <th>Actions</th>
                             </tr>
                             <tr>
-                                <td>
-                                    <div class="img2"><img src="man1.png"><span>Ankush verma</span></div>
-                                </td>
-                                <td>25402</td>
-                                <td>10-A</td>
-                                <td>06 Nov 2026</td>
-                                <td><span class="active">Present</span></td>
-                                <td>8:50 AM</td>
+                                <td> Grade 10 </td>
+                                <td>A</td>
+                                <td>Rajinder Kumar</td>
+                                <td>40</td>
+                                <td>9:15 AM</td>
+                                <td><span class="active">Active</span></td>
                                 <td>
                                     <span class="material-symbols-outlined img1">visibility</span>
                                     <span class="material-symbols-outlined edit-icon img2">edit_square</span>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <div class="img3"><img src="man2.png"><span>Dinesh Verma</span></div>
-                                </td>
-                                <td>23402</td>
-                                <td>11-C</td>
-                                <td>06 Nov 2026</td>
-                                <td><span class="active">Present</span></td>
-                                <td>8:55 AM</td>
+                                 <td> Grade 11</td>
+                                <td>B</td>
+                                <td>Ramesh Kumar</td>
+                                <td>49</td>
+                                <td>10:00 AM</td>
+                                <td><span class="active">Active</span></td>
                                 <td>
                                     <span class="material-symbols-outlined img1">visibility</span>
                                     <span class="material-symbols-outlined edit-icon img2">edit_square</span>
                                 </td>
                             </tr>
                             <tr>
+                                <td> Grade 12</td>
+                                <td>A</td>
+                                <td>Rajni Shukla</td>
+                                <td>27</td>
+                                <td>10:45 AM</td>
+                                <td><span class="active">Active</span></td>
                                 <td>
-                                    <div class="img4"><img src="man 3.png"><span>Sohan soni</span></div>
+                                    <span class="material-symbols-outlined img1">visibility</span>
+                                    <span class="material-symbols-outlined edit-icon img2">edit_square</span>
                                 </td>
-                                <td>22402</td>
-                                <td>12-B</td>
-                                <td>06 Nov 2026</td>
-                                <td><span class="Late">Late</span></td>
-                                <td>9:18 AM</td>
+                            </tr>
+                            <tr>   
+                                <td> Grade 9</td>
+                                <td>C</td>
+                                <td>Sonali Yadav</td>
+                                <td>23</td>
+                                <td>11:30 AM</td>
+                                <td><span class="active">Active</span></td>
+                                <td>
+                                    <span class="material-symbols-outlined img1">visibility</span>
+                                    <span class="material-symbols-outlined edit-icon img2">edit_square</span>
+                                </td>
+                            </tr>
+                            <tr>   
+                                <td> Grade 8</td>
+                                <td>C</td>
+                                <td>Ramesh Kumar</td>
+                                <td>30</td>
+                                <td>12:15 PM</td>
+                                <td><span class="active">Active</span></td>
                                 <td>
                                     <span class="material-symbols-outlined img1">visibility</span>
                                     <span class="material-symbols-outlined edit-icon img2">edit_square</span>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <div class="img5"><img src="women3.png"><span>Sohani arora</span></div>
-                                </td>
-                                <td>22402</td>
-                                <td>9-B</td>
-                                <td>06 Nov 2026</td>
-                                <td><span class="active">Present</span></td>
-                                <td>9:09 AM</td>
+                                <td>Grade 10</td>
+                                <td>B</td>
+                                <td>Sneha Sharma</td>
+                                <td>41</td>
+                                <td>1:00 PM</td>
+                                <td><span class="active">Active</span></td>
                                 <td>
                                     <span class="material-symbols-outlined img1">visibility</span>
                                     <span class="material-symbols-outlined edit-icon img2">edit_square</span>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    <div class="img6"><img src="women.png"><span>Sneha Patel</span></div>
-                                </td>
-                                <td>25405</td>
-                                <td>10-A</td>
-                                <td>06 Nov 2026</td>
-                                <td><span class="inactive">Absent</span></td>
-                                <td>- - -</td>
-                                <td>
-                                    <span class="material-symbols-outlined img1">visibility</span>
-                                    <span class="material-symbols-outlined edit-icon img2">edit_square</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="img7"><img src="women1.png"><span>Sonali Kumar</span></div>
-                                </td>
-                                <td>24304</td>
-                                <td>11-C</td>
-                                <td>06 Nov 2026</td>
-                                <td><span class="Late">Late</span></td>
-                                <td>9:29 AM</td>
-                                <td>
-                                    <span class="material-symbols-outlined img1">visibility</span>
-                                    <span class="material-symbols-outlined edit-icon img2">edit_square</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="img8"><img src="women1.png"><span>Sneha Patel</span></div>
-                                </td>
-                                <td>27405</td>
-                                <td>9-B</td>
-                                <td>06 Nov 2026</td>
-                                <td><span class="inactive">Absent</span></td>
-                                <td>- - -</td>
+                                <td> Grade 11</td>
+                                <td>C</td>
+                                <td>Sandeep Aggarwal</td>
+                                <td>32</td>
+                                <td>1:45 PM</td>
+                                <td><span class="inactive">Inactive</span></td>
                                 <td>
                                     <span class="material-symbols-outlined img1">visibility</span>
                                     <span class="material-symbols-outlined edit-icon img2">edit_square</span>
