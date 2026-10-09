@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teachers</title>
-    <link rel="icon" type="image/png" href="SSS.svg">
-    <link rel="stylesheet" href="Teachers.css">
+    <title>Settings</title>
+    <link rel="stylesheet" href="Settings.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="logooo.png">
 </head>
+
 <body>
     <div class="container">
         <div class="left">
@@ -35,7 +35,8 @@
                             <li><a href="Attendence.html"><span
                                         class="material-symbols-outlined">check_circle</span><span>Attendance</span></a>
                             </li>
-                            <li><a href="Classes.html"><span class="material-symbols-outlined">class</span><span>Classes</span></a>
+                            <li><a href="Classes.html"><span
+                                        class="material-symbols-outlined">class</span><span>Classes</span></a>
                             </li>
                             <li><a href="Teachers.html"><span
                                         class="material-symbols-outlined">person</span><span>Teachers</span></a></li>
@@ -54,7 +55,7 @@
             <main>
                 <header class="top-header">
                     <div class="heading">
-                    <h1>Settings</h1>
+                        <h1>Settings</h1>
                         <p>Manage your account and system preferences</p>
                     </div>
                     <div class="search-icon">
@@ -81,5 +82,247 @@
                     </div>
                 </header>
                 <div class="content">
-                    .
+                    <section class="box settings-section active" id="general">
+                        <nav>
+                            <ul>
+                            <li><span class="general material-symbols-outlined">settings</span>General</li>
+                            <li><span class="profile material-symbols-outlined">person</span>Profile</li>
+                            <li><span class="notification material-symbols-outlined">notifications</span>Notifications</li>
+                            <li><span class="security material-symbols-outlined">security</span>Security</li>
+                            </ul>                       
+                        </nav>
+                        <div class="gen">
+                        <h1>General Settings</h1>
+                        <p>update your school and system information</p>
+                        </div>
+                        <div class="sc">
+                            <h2>School Name</h2>
+                            <input type="text" placeholder="School Name">
+                        </div>
+                        <div class="ad">
+                            <h2>Admin Email</h2>
+                            <input type="email" placeholder="Admin Email">
+                        </div>
+                        <div class="pn">
+                            <h2>Phone Number</h2>
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        <div class="ay">
+                            <h2>Academic Year</h2>
+                            <select>
+                                <option value="2023-2024">2023-2024</option>
+                                <option value="2024-2025">2024-2025</option>
+                                <option value="2025-2026">2025-2026</option>
+                                <option value="2026-2027">2026-2027</option>
+                            </select>
+                        </div>
+                        <div class="tz">
+                            <h2>Time Zone</h2>
+                            <select>
+                                <option>Asia/Kolkata (India)</option>
+                                <option>Asia/Dubai (UAE)</option>
+                                <option>Asia/Kathmandu (Nepal)</option>
+                                <option>Asia/Singapore</option>
+                                <option>Asia/Tokyo (Japan)</option>
+                                <option>Europe/London (UK)</option>
+                                <option>Europe/Paris (France)</option>
+                                <option>America/New_York</option>
+                                <option>America/Chicago</option>
+                                <option>America/Los_Angeles</option>
+                                <option>Australia/Sydney</option>
+                            </select>
+                        </div>
+                        <div class="language">
+                            <h2>Language</h2>
+                            <select>
+                                <option>English</option>
+                                <option>Hindi</option>
+                                <option>Punjabi</option>
+                                <option>Urdu</option>
+                                <option>Kannada</option>
+                                <option>Gujarati</option>
+                                <option>Marathi</option>
+                                <option>Telugu</option>
+                            </select>
+                        </div>
+                        <div class="notf">
+                            <h1>Notifications Preferences</h1>
+                            <div class="email">
+                                <h3>Email Notifications</h3>
+                                <label class="switch">
+                                    <input type="checkbox" checked>
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                            <div class="att">
+                                <h3>Attendance Alerts</h3>
+                                <label class="switch">
+                                    <input type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="button">Cancel</button>
+                            <button class="Submit">Save Changes</button>
+                        </div>
+                        </section>
+                        <!--General Settings-->
+                        <section class="box1 settings-section" id="notifications">
+                            <h1>Notifications</h1>
+                            <p>Manage your account and system preferences</p>
+                            <nav>
+                             <ul>
+                                <li><span class="general material-symbols-outlined">settings</span>General</li>
+                                <li><span class="profile material-symbols-outlined">person</span>Profile</li>
+                                <li><span class="notification material-symbols-outlined">notifications</span>Notifications</li>
+                                <li><span class="security material-symbols-outlined">security</span>Security</li>
+                             </ul>
+                            </nav>
+                            <label class="switch1">
+                                <h3>Email Notifications</h3>
+                                <p>Receive important updates via email</p>
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <label class="switch2">
+                                <h3>Attendence Alerts</h3>
+                                <p>Get alerts for low student attendance</p>
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <label class="switch3">
+                                <h3>New Student Registrations</h3>
+                                <p>Notify when a student added</p>
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <label class="switch4">
+                                <h3>Teacher Leave Requests</h3>
+                                <p>Receive new leave request alerts</p>
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <label class="switch5">
+                                <h3>System Updates</h3>
+                                <p>Get notifications about system changes</p>
+                                <input type="checkbox" checked>
+                                <span class="slider round"></span>
+                            </label>
+                            <div class="select">
+                                <h2>Email Summary</h2>
+                                <select>
+                                    <option>Daily</option>
+                                    <option>Weekly</option>
+                                    <option>Monthly</option>
+                                    <option>Never</option>
+                                </select>
+                            </div>
+                            <div class="buttons1">
+                                <button class="button">Cancel</button>
+                                <button class="Submit">Save Preferences</button>
+                            </div>
+                        </section>
+                        <!--Notifications Settings-->
+                        <section class="box2 settings-section" id="security">
+                            <h1>Security</h1>
+                            <p>Manage your account and account security</p>
+                            <nav>
+                                <ul>
+                                <li><span class="material-symbols-outlined">settings</span>General</li>
+                                <li><span class="material-symbols-outlined">person</span>Profile</li>
+                                <li><span class="material-symbols-outlined">notifications</span>Notifications</li>
+                                <li><span class="material-symbols-outlined">security</span>Security</li>
+                              </ul>
+                            </nav>
+                            <div class="pass">
+                                <h2>Change Password</h2>
+                                <div class="pass1">
+                                    <h4>Current Password</h4>
+                                    <label for="current-password"></label>
+                                    <input type="password" id="current-password">
+                                </div>
+                                <div class="pass2">
+                                    <h4>New Password</h4>
+                                    <label for="new-password"></label>
+                                    <input type="password" id="new-password">
+                                </div>
+                                <div class="pass3">
+                                    <h4>Confirm New Password</h4>
+                                    <label for="confirm-password"></label>
+                                    <input type="password" id="confirm-password">
+                                    <p>Use at least 8 characters with letters, numbers and special characters.</p>
+                                </div>
+                            </div>
+                            <div class="one">
+                                <h2>Two-Factor Authentication</h2>
+                                <p>Add an extra layer of security to your account.</p>
+                                <input type="checkbox" id="two-factor-auth">
+                                <label for="two-factor-auth"></label>
+                            </div>
+                            <div class="two">
+                                <h2>Active Sessions</h2>
+                                <p>You currently signed in on 1 device</p>
+                                <button class="button6">Sign Out all</button>
+                            </div>
+                            <div class="buttons2">
+                                <button class="button">Cancel</button>
+                                <button class="Submit">Update Password</button>
+                            </div>
+                        </section>
+                        <!--Security Settings-->
+                        <section class="box3 settings-section" id="profile">
+                            <h1>Profile Settings</h1>
+                            <p>Update your personal information</p>
+                            <nav>
+                                <ul>
+                                <li><span class="material-symbols-outlined">settings</span>General</li>
+                                <li><span class="material-symbols-outlined">person</span>Profile</li>
+                                <li><span class="material-symbols-outlined">notifications</span>Notifications</li>
+                                <li><span class="material-symbols-outlined">security</span>Security</li>
+                                </ul>
+                            </nav>
+                            <div class="ph">
+                                <img src="man1.png">
+                            <label for="profile-image" class="change-photo">Change Photo</label>
+                            <input type="file" id="profile-image" accept="image/*" hidden>
+                            </div>
+                            <div class="profile-info">
+                                <div class="name">
+                                    <h4>Full Name</h4>
+                                    <input type="text" placeholder="Full Name">
+                                </div>
+                                <div class="username">
+                                    <h4>Username</h4>
+                                    <input type="text" placeholder="admin">
+                                </div>
+                                <div class="email">
+                                    <h4>Email Address</h4>
+                                    <input type="email" placeholder="Email Address">
+                                </div>
+                                <div class="phone">
+                                    <h4>Phone Number</h4>
+                                    <input type="tel" placeholder="Phone Number">
+                                </div>
+                                <div class="role">
+                                    <h4>Role</h4>
+                                    <input type="text" value="Administrator" readonly>
+                                </div>
+                                <div class="address">
+                                    <h4>Address</h4>
+                                    <input type="text" placeholder="Address">
+                                </div>
+                            </div>
+                            <div class="buttons3">
+                                <button class="button">Cancel</button>
+                                <button class="Submit">Save Profile</button>
+                            </div>
+                    </section>
+                        <!--Profile Settings-->
+                    </div>
                 </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

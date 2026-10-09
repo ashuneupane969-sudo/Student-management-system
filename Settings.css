@@ -300,3 +300,87 @@ body {
     bottom: 89px;
     color: #777777;
 }
+.settings-section {
+    display: none;
+}
+.settings-section.active {
+    display: block;
+}
+.container .right main .content section.box {
+  box-sizing: border-box;
+  border: 2px solid #dddddd;
+  background-color: white;
+  width: 1090px;
+  height: 700px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 1fr;
+  position: relative;
+  left: 51px;
+  overflow: hidden;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+}
+.container .right main .content section.box nav ul
+{
+    list-style: none;
+    margin: -23px;
+    text-align: center;
+    border:2px solid #dddddd;
+    width:20vw;
+    min-height: 100vh;
+    height:80vh;
+    gap: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    white-space: nowrap;
+    display: block;
+}
+.container .right main .content section.box nav ul li{
+  font-size: 20px;
+  position: relative;
+  top: 25px;
+  gap: 20px;
+  padding: 15px;
+  margin:10px;
+  align-items: center;
+  display: flex;
+}
+.container .right main .content section.box nav ul li:hover{
+    background-color: #FEECD0;
+    cursor: pointer;
+    color: #7A1E00 !important;
+    border-radius: 10px;
+}
+.container .right main .content section.box ul li .general {
+    margin-left: 20px;
+    font-size: 30px;
+}
+.container .right main .content section.box ul li .profile {
+    margin-left: 20px;
+    font-size: 30px;
+}
+.container .right main .content section.box ul li .notification {
+    margin-left: 20px;
+    font-size: 30px;
+}
+.container .right main .content section.box ul li .security {
+    margin-left: 20px;
+    font-size: 30px;
+}
+.container .right main .content section.box .gen h1{
+    display: flex;
+    margin-top: 12px;
+    position: relative;
+    right: 422px;
+}
+.container .right main .content section.box .gen p{
+    position: relative;
+    right: 420px;
+    bottom:10px;
+    color: #777777;
+}
