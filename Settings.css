@@ -302,6 +302,7 @@ body {
     color: #777777;
 }
 
+/* General */
 .settings-section {
     display: none;
 }
@@ -632,32 +633,34 @@ body {
 }
 
 .container .right main .content section.box .buttons .button {
-  position: absolute;
-  left: 775px;
-  bottom: 10px;
-  height: 45px;
-  width: 125px;
-  list-style: none;
-  padding: 0px 10px 0 15px;
-  background: white;
-  border: 1px solid #c8c4c4;
-  border-radius: 8px;
-  font-size: 17px;
+    position: absolute;
+    left: 775px;
+    bottom: 10px;
+    height: 45px;
+    width: 125px;
+    list-style: none;
+    padding: 0px 10px 0 15px;
+    background: white;
+    border: 1px solid #c8c4c4;
+    border-radius: 8px;
+    font-size: 17px;
 }
-.container .right main .content section.box .buttons .Submit{
-  position: absolute;
-  color:white;
-  left: 915px;
-  bottom: 10px;
-  height: 45px;
-  width: 150px;
-  list-style: none;
-  padding: 0px 10px 0 15px;
-  background: #f7a707;
-  border: 1px solid #c8c4c4;
-  border-radius: 8px;
-  font-weight: 14px;
+
+.container .right main .content section.box .buttons .Submit {
+    position: absolute;
+    color: white;
+    left: 915px;
+    bottom: 10px;
+    height: 45px;
+    width: 150px;
+    list-style: none;
+    padding: 0px 10px 0 15px;
+    background: #f7a707;
+    border: 1px solid #c8c4c4;
+    border-radius: 8px;
+    font-weight: 14px;
 }
+
 .container .right main .content section.box nav {
     grid-column: 1;
     grid-row: 1 / 7;
@@ -726,3 +729,810 @@ body {
     width: 1px;
     background-color: #dddddd;
 }
+
+.container .right main .content section.settings-section:not(.active) {
+    display: none;
+}
+
+/* Notification */
+.container .right main .content section.box1 {
+    box-sizing: border-box;
+    border: 2px solid #dddddd;
+    background-color: white;
+    width: 1090px;
+    height: 700px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: repeat(9, auto) 1fr;
+    align-content: start;
+    column-gap: 20px;
+    row-gap: 0;
+    position: relative;
+    left: 51px;
+    overflow: hidden;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.container .right main .content section.box1 nav ul {
+    list-style: none;
+    margin: 0;
+    border: none;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    gap: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    white-space: nowrap;
+    display: block;
+}
+
+.container .right main .content section.box1 nav ul li {
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+    gap: 20px;
+    padding: 15px;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.container .right main .content section.box1 nav ul li:hover {
+    background-color: #FEECD0;
+    cursor: pointer;
+    color: #7A1E00 !important;
+    border-radius: 10px;
+}
+
+.container .right main .content section.box1 ul li .general {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container .right main .content section.box1 ul li .profile {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container .right main .content section.box1 ul li .notification {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container .right main .content section.box1 ul li .security {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container .right main .content section.box1 .gen1 h1 {
+    display: flex;
+    margin-top: 25px;
+    position: relative;
+    right: 0px;
+    font-size: 25px;
+}
+
+.container .right main .content section.box1 .gen1 p {
+    position: relative;
+    right: -2px;
+    bottom: 10px;
+    color: #777777;
+}
+
+.container .right main .content section.box1 .switch1,
+.container .right main .content section.box1 .switch2,
+.container .right main .content section.box1 .switch3,
+.container .right main .content section.box1 .switch4,
+.container .right main .content section.box1 .switch5 {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    min-height: 70px;
+    height: 20px;
+}
+
+.container .right main .content section.box1 .switch1,
+.container .right main .content section.box1 .switch2,
+.container .right main .content section.box1 .switch3,
+.container .right main .content section.box1 .switch4 {
+    display: flex;
+    border-bottom: none !important;
+}
+
+.container .right main .content section.box1 .switch1 h3,
+.container .right main .content section.box1 .switch2 h3,
+.container .right main .content section.box1 .switch3 h3,
+.container .right main .content section.box1 .switch4 h3,
+.container .right main .content section.box1 .switch5 h3 {
+    font-size: 17px;
+    margin-left: 4px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+
+.container .right main .content section.box1 .switch1 p,
+.container .right main .content section.box1 .switch2 p,
+.container .right main .content section.box1 .switch3 p,
+.container .right main .content section.box1 .switch4 p,
+.container .right main .content section.box1 .switch5 p {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #777777;
+    position: absolute;
+    margin-top: 35px;
+}
+
+.container .right main .content section.box1>label input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.container .right main .content section.box1>label .slider {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 30px;
+    background-color: #cccccc;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.container .right main .content section.box1>label .slider::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.container .right main .content section.box1>label input:checked+.slider {
+    background-color: #f7a707;
+}
+
+.container .right main .content section.box1>label input:checked+.slider::before {
+    transform: translateX(26px);
+}
+
+.container .right main .content section.box1 .select h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container .right main .content section.box1 .select select {
+    width: 777px;
+    list-style: none;
+    height: 40px;
+    background-color: white;
+    border: 2px solid #dddddd;
+    padding: 10px 10px 10px 25px;
+    font-size: 16px;
+}
+
+.container .right main .content section.box1 .buttons1 button {
+    position: absolute;
+    left: 775px;
+    bottom: 30px;
+    height: 45px;
+    width: 125px;
+    list-style: none;
+    padding: 0px 10px 0 15px;
+    background: white;
+    border: 1px solid #c8c4c4;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+.container .right main .content section.box1 .button1 .Submit {
+    position: absolute;
+    color: white;
+    left: 915px;
+    bottom: 30px;
+    height: 45px;
+    width: 150px;
+    list-style: none;
+    padding: 0px 10px 0 15px;
+    background: #f7a707;
+    border: 1px solid #c8c4c4;
+    border-radius: 8px;
+    font-weight: 14px;
+}
+
+.container .right main .content section.box1 nav {
+    grid-column: 1;
+    grid-row: 1 / 11;
+    position: relative;
+}
+
+.container .right main .content section.box1 nav::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -20px;
+    bottom: -20px;
+    width: 1px;
+    background-color: #dddddd;
+}
+
+.container .right main .content section.box1>h1 {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    position: static;
+    margin: 0;
+}
+
+.container .right main .content section.box1>p {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    position: static;
+    margin: 0;
+    color: #777777;
+}
+
+.container .right main .content section.box1>.switch1,
+.container .right main .content section.box1>.switch2,
+.container .right main .content section.box1>.switch3,
+.container .right main .content section.box1>.switch4,
+.container .right main .content section.box1>.switch5,
+.container .right main .content section.box1>.select,
+.container .right main .content section.box1>.buttons1 {
+    grid-column: 2 / 4;
+}
+
+.container .right main .content section.box1>label {
+    position: relative;
+}
+
+/* Security */
+.container .right main .content section.box2 {
+    box-sizing: border-box;
+    border: 2px solid #dddddd;
+    background-color: white;
+    width: 1090px;
+    height: 700px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: repeat(9, auto) 1fr;
+    align-content: start;
+    column-gap: 20px;
+    row-gap: 0;
+    position: relative;
+    left: 51px;
+    overflow: hidden;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.container .right main .content section.box2 nav ul {
+    list-style: none;
+    margin: 0;
+    border: none;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    gap: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    white-space: nowrap;
+    display: block;
+}
+
+.container .right main .content section.box2 nav ul li {
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+    gap: 20px;
+    padding: 15px;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.container .right main .content section.box2 nav ul li:hover {
+    background-color: #FEECD0;
+    cursor: pointer;
+    color: #7A1E00 !important;
+    border-radius: 10px;
+}
+
+.container .right main .content section.box2 ul li .general {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container .right main .content section.box2 ul li .profile {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container .right main .content section.box2 ul li .notification {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container .right main .content section.box2 ul li .security {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container .right main .content section.box2 .pass h2 {
+    font-size: 18px;
+}
+
+.container .right main .content section.box2 .pass1 h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: -8px;
+}
+
+.container .right main .content section.box2 .pass1 input {
+    height: 35px;
+    width: 760px;
+    margin-top: -10px;
+}
+
+.container .right main .content section.box2 .pass1 span.visible {
+    position: absolute;
+    top: 150px;
+    right: 45px;
+    color: #777777;
+}
+
+.container .right main .content section.box2 .pass2 h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.container .right main .content section.box2 .pass2 input {
+    height: 35px;
+    width: 760px;
+    margin-top: -10px;
+}
+
+.container .right main .content section.box2 .pass2 span.visible {
+    position: absolute;
+    top: 235px;
+    right: 45px;
+    color: #777777;
+}
+
+.container .right main .content section.box2 .pass3 h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+.container .right main .content section.box2 .pass3 input {
+    height: 35px;
+    width: 760px;
+    margin-top: -10px;
+}
+
+.container .right main .content section.box2 .pass3 span.visible {
+    position: absolute;
+    top: 318px;
+    right: 45px;
+    color: #777777;
+}
+.container .right main .content section.box2 .pass3 p{
+    color:#777777;
+    font-size: 14px;
+    font-weight: 500;
+}
+.container .right main .content section.box2 .one{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    min-height: 70px;
+    height: 10px;
+    border-radius: 10px;
+}
+.container .right main .content section.box2 .two{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    min-height: 70px;
+    height: 10px;
+    top: 15px;
+    position: relative;
+    border-radius: 10px;
+}
+.container .right main .content section.box2 .one h2{
+    font-size: 18px;
+    margin-top: -1px;
+}
+.container .right main .content section.box2 .one p{
+    font-size: 14px;
+    margin-bottom: -10px;
+    position: relative;
+    right: 427px;
+    color: #777777;
+}
+.container .right main .content section.box2 .two .button6{
+  position: absolute;
+  left: 635px;
+  bottom: 14px;
+  height: 40px;
+  width: 125px;
+  list-style: none;
+  padding: 0px 10px 0 15px;
+  background: white;
+  border: 1px solid #c8c4c4;
+  border-radius: 8px;
+  font-size: 15px;
+}
+.container .right main .content section.box2 .two h2{
+    font-size: 18px;
+    margin-top: -1px;
+}
+.container .right main .content section.box2 .two p{
+    font-size: 14px;
+    margin-bottom: -10px;
+    position: relative;
+    right: 504px;
+    color: #777777;
+}
+.container .right main .content section.box2 .buttons2 .button{
+    position: absolute;
+    left: 775px;
+    bottom: 50px;
+    height: 45px;
+    width: 125px;
+    list-style: none;
+    padding: 0px 10px 0 15px;
+    background: white;
+    border: 1px solid #c8c4c4;
+    border-radius: 8px;
+    font-size: 17px;
+}
+.container .right main .content section.box2 .submit .Submit{
+    position: absolute;
+    color: white;
+    left: 915px;
+    bottom: 50px;
+    height: 45px;
+    width: 150px;
+    list-style: none;
+    padding: 0px 10px 0 15px;
+    background: #f7a707;
+    border: 1px solid #c8c4c4;
+    border-radius: 8px;
+    font-weight: 14px;
+}
+
+.container .right main .content section.box2 .one input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+.container .right main .content section.box2 .one label {
+    position: absolute;
+    right: 50px;
+    top: 61.5%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 30px;
+    background-color: #cccccc;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.container .right main .content section.box2 .one label::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 3px;
+    top: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.container .right main .content section.box2 .one input:checked + label {
+    background-color: #f7a707;
+}
+.container .right main .content section.box2 .one input:checked + label::before {
+    transform: translateX(26px);
+}
+.container .right main .content section.box2 .one input:focus-visible + label {
+    outline: 2px solid black;
+    outline-offset: 3px;
+}
+
+.container .right main .content section.box2 nav {
+    grid-column: 1;
+    grid-row: 1 / 11;
+    position: relative;
+}
+
+.container .right main .content section.box2 nav::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -20px;
+    bottom: -20px;
+    width: 1px;
+    background-color: #dddddd;
+}
+
+.container .right main .content section.box2>h1 {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    position: static;
+    margin: 0;
+}
+
+.container .right main .content section.box2>p {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    position: static;
+    margin: 0;
+    color: #777777;
+}
+
+.container .right main .content section.box2>.one,
+.container .right main .content section.box2>.two,
+.container .right main .content section.box2>.buttons2 {
+    grid-column: 2 / 4;
+}
+.container .right main .content section.box2 .pass {
+    grid-column: 2 / 4;
+}
+
+.container .right main .content section.box2 .one {
+    position: relative;
+}
+/* Profile */
+.container .right main .content section.box3 {
+    box-sizing: border-box;
+    border: 2px solid #dddddd;
+    background-color: white;
+    width: 1090px;
+    height: 700px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-rows: repeat(9, auto) 1fr;
+    align-content: start;
+    column-gap: 20px;
+    row-gap: 0;
+    position: relative;
+    left: 51px;
+    overflow: hidden;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+}
+
+.container .right main .content section.box3 nav ul {
+    list-style: none;
+    margin: 0;
+    border: none;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    gap: 10px;
+    padding: 0px;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    white-space: nowrap;
+    display: block;
+}
+.container .right main .content section.box3 nav ul li {
+    font-size: 20px;
+    position: relative;
+    top: 25px;
+    gap: 20px;
+    padding: 15px;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+}
+
+.container .right main .content section.box3 nav ul li:hover {
+    background-color: #FEECD0;
+    cursor: pointer;
+    color: #7A1E00 !important;
+    border-radius: 10px;
+}
+
+.container .right main .content section.box3 ul li .general {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container .right main .content section.box3 ul li .profile {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container .right main .content section.box3 ul li .notification {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container .right main .content section.box3 ul li .security {
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.container .right main .content section.box3.active {
+    display: grid;
+}
+
+.container .right main .content section.box3 .ph img{
+  width: 170px;
+  height: 150px;
+  margin-top: 85px;
+}
+.container .right main .content section.box3 h1{
+    top:22px;
+    position: absolute;
+}
+.container .right main .content section.box3 p{
+    top:48px;
+    position: absolute;
+}
+.container .right main .content section.box3 .ph .change-photo{
+  border-radius: 6px;
+  background-color: white;
+  border: 2px solid #dddddd;
+  width: 130px;
+  height: 13px;
+  top: 150px;
+  position: absolute;
+  padding: 14px 7px 18px 25px;
+  right: 435px;
+  cursor: pointer;
+}
+.container .right main .content section.box3 .profile-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 20px;
+}
+.container .right main .content section.box3 .profile-info input {
+    width: 100%;
+    box-sizing: border-box;
+}
+.container .right main .content section.box3 .profile-info .name input{
+  height: 45px;
+  width: 360px;
+  margin-top: -10px;
+  padding: 0px 10px 0px 20px;
+}
+.container .right main .content section.box3 .profile-info .username input{
+  height: 45px;
+  width: 360px;
+  margin-top: -10px;
+  padding: 0px 10px 0px 20px;
+}
+.container .right main .content section.box3 .profile-info .email input{
+  height: 45px;
+  width: 360px;
+  margin-top: -10px;
+  padding: 0px 10px 0px 20px;
+}
+.container .right main .content section.box3 .profile-info .phone input{
+  height: 45px;
+  width: 360px;
+  margin-top: -10px;
+  padding: 0px 10px 0px 20px;
+}
+.container .right main .content section.box3 .profile-info .role input{
+  height: 45px;
+  width: 360px;
+  margin-top: -10px;
+  background-color: #edebeb;
+  padding: 0px 10px 0px 20px;
+  border-radius: 5px;
+  border: 1px solid #c8c4c4;
+}
+.container .right main .content section.box3 .profile-info .address input{
+  height: 45px;
+  width: 360px;
+  margin-top: -10px;
+  padding: 0px 10px 0px 20px;
+}
+.container .right main .content section.box3 .buttons3 .button{
+    position: absolute;
+    left: 775px;
+    bottom: 15px;
+    height: 45px;
+    width: 125px;
+    list-style: none;
+    padding: 0px 10px 0 15px;
+    background: white;
+    border: 1px solid #c8c4c4;
+    border-radius: 8px;
+    font-size: 17px;
+}
+.container .right main .content section.box3 .button4 .Submit{
+    position: absolute;
+    color: white;
+    left: 915px;
+    bottom: 15px;
+    height: 45px;
+    width: 150px;
+    list-style: none;
+    padding: 0px 10px 0 15px;
+    background: #f7a707;
+    border: 1px solid #c8c4c4;
+    border-radius: 8px;
+    font-weight: 14px;
+}
+.container .right main .content section.box3 nav {
+    grid-column: 1;
+    grid-row: 1 / 16;
+    position: relative;
+}
+
+.container .right main .content section.box3 nav::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -20px;
+    bottom: -20px;
+    width: 1px;
+    background-color: #dddddd;
+}
+
+.container .right main .content section.box3 > h1 {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    margin: 0;
+}
+
+.container .right main .content section.box3 > p {
+    grid-column: 2 / 4;
+    grid-row: 2;
+    margin: 0;
+    color: #777777;
+}
+
+.container .right main .content section.box3 > .ph {
+    grid-column: 2 / 4;
+    grid-row: 3;
+}
+
+.container .right main .content section.box3 > .profile-info {
+    grid-column: 2 / 4;
+    grid-row: 4;
+}
+
+.container .right main .content section.box3 > .buttons3 {
+    grid-column: 2 / 4;
+    grid-row: 6;
+    align-self: end;
+}
+
